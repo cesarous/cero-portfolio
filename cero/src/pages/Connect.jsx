@@ -1,6 +1,7 @@
 import { Box, Image, Heading, Text } from "@chakra-ui/react";
 import { Button } from '@chakra-ui/react'
 import ServicesList from '../components/ServicesList.jsx';
+import ContactUs from '../components/ContactUs.jsx';
 import { Flex } from '@chakra-ui/react';
 
 
@@ -32,8 +33,8 @@ const Connect = () => {
   return (
     <Box margin = "auto">
       <ServicesList services={Services}/>
+      <ContactUs></ContactUs>
       </Box>
-
   );
 };
 

@@ -1,0 +1,52 @@
+.contact-form {
+    background-color: #ffffff;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius:10px;
+    border-width:1px;
+
+  }
+  
+  .contact-form div {
+    display: grid;
+    gap: 0px; /* Add some gap between the columns */
+    grid-template-columns: 1fr 1fr; /* Two items per row */
+  }
+  
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"],
+  .contact-form textarea {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+
+  }
+ 
+  .contact-form input[type="submit"] {
+    background-color: #ffffff;
+    color: #49494b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #1c351f;
+  }
+  
+  form {
+    max-width: 800px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Set the left and right margins to auto to center the form */
+    
+  }
+  

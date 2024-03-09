@@ -29,7 +29,7 @@ const menu_list = [
   },
   {
     id: 4,
-    title: 'Qualifications',
+    title: 'History',
     link: '/qualifications',
     icon: 'School'
   },
