@@ -69,14 +69,15 @@ function App() {
     <div className="App">
       <div className="center-content">
       <Sidebar className="sidebar">
-        <Menu iconShape="square">
-        <Image 
+      <Image marginBottom="40px"
         w="auto"
         h="auto"
         align src="favicon.ico"></Image>
+        <Menu iconShape="square">
+       
 
           {menu_list.map((menu_item) => (
-            <MyItem key={menu_item.id} box={menu_item} />
+            <MyItem marginBottom ="10px" key={menu_item.id} box={menu_item} />
           ))}
         </Menu>
 

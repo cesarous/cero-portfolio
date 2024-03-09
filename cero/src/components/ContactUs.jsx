@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import './css/ContactUs.css';
 
@@ -47,12 +47,17 @@ export const ContactUs = () => {
         <label htmlFor="message">Message</label>
         <textarea id="message" name="message" required></textarea>
       </div>
-      <input maxW="sm"
-      borderWidth="1px"
-      borderRadius="lg"
-      overflow="hidden"
-      boxShadow={hover ? '0 4px 8px 0 rgba(94, 23, 235, 0.2), 0 6px 20px 0 rgba(94, 23, 235, 0.19)' : ''}
-      transition="box-shadow 0.3s ease-in-out"
+      <input style={{
+            marginTop: '10px',
+            maxWidth: 'sm',
+            borderWidth: '1px',
+            borderRadius: '10px',
+            overflow: 'hidden',
+            boxShadow: hover
+              ? '0 4px 8px 0 rgba(94, 23, 235, 0.2), 0 6px 20px 0 rgba(94, 23, 235, 0.19)'
+              : '',
+            transition: 'box-shadow 0.3s ease-in-out',
+          }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave} 
       type="submit" value="Send" />

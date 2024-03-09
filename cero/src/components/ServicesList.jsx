@@ -21,7 +21,7 @@ const ServiceCard = ({ service }) => {
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
-      boxShadow={hover ? '0 4px 8px 0 rgba(94, 23, 235, 0.2), 0 6px 20px 0 rgba(94, 23, 235, 0.19)' : ''}
+      boxShadow={hover ? '0 4px 8px 0 rgba(94, 23, 235, 0.2), 0 6px 20px 0 rgba(94, 23, 235, 0.19)' : '0 4px 8px 0 #49494b;'}
       transition="box-shadow 0.3s ease-in-out"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

@@ -4,7 +4,7 @@
     padding: 20px;
     border-radius:10px;
     border-width:1px;
-
+    box-shadow: 0 4px 15px 0 #49494b;
   }
   
   .contact-form div {
@@ -34,15 +34,14 @@
   .contact-form input[type="submit"] {
     background-color: #ffffff;
     color: #49494b;
-    border: none;
+    
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    
   }
   
-  .contact-form input[type="submit"]:hover {
-    background-color: #1c351f;
-  }
+
   
   form {
     max-width: 800px; /* Set a maximum width for the form */

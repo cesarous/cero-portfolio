@@ -22,7 +22,8 @@ const Home = () => {
     <Box maxWidth="xxl" mx="auto" marginBottom="40px" display='flex' alignItems='center'  >
   
       <Box maxWidth="lg" mx="auto">
-        <Heading as="h2" size="lg" mt={4}>
+        <Text className = "test">  font-family: 'Forum';</Text>
+        <Heading className= "h2" as="h2" size="lg" mt={4}>
             Cesar Rodriguez
           </Heading>
           <Text mt={2} marginBottom = "20px">
