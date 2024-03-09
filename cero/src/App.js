@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.css';
+import './pages/css/Sidebar.css';
+import * as Icons from '@mui/icons-material/'; // Import all icons from Material-UI
+
 import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 
 import { Outlet, Link } from 'react-router-dom';
@@ -8,35 +11,52 @@ const menu_list = [
   {
     id: 1,
     title: 'Home',
-    link: '/'
+    link: '/',
+    icon: 'Home'
   },
   {
     id: 2,
     title: 'About',
-    link: '/about'
+    link: '/about',
+    icon: 'FitnessCenter'
   },
   {
     id: 3,
     title: 'Projects',
-    link: '/projects'
+    link: '/projects',
+    icon: 'Engineering'
   },
   {
     id: 4,
     title: 'Qualifications',
-    link: '/Qualifications'
+    link: '/qualifications',
+    icon: 'School'
   },
   {
     id: 5,
     title: 'Services',
-    link: '/services'
+    link: '/services',
+    icon: 'Terminal'
+  },
+  {
+    id: 6,
+    title: 'Connect',
+    link: '/connect',
+    icon: 'Phone'
   },
 ];
 
 const MyItem = ({ box }) => {
+  const iconName = box.icon;
+  const BoxIcon = Icons[iconName]; // Dynamically get the icon component
+  console.log({iconName});
+  console.log({Icons});
   return (
+
     <section id="services-list">
+      <></>
       <Link to={box.link}>
-        <MenuItem>{box.title}</MenuItem>
+        <MenuItem background-color = "white" icon= {BoxIcon && <BoxIcon />}>{box.title}</MenuItem>
       </Link>
     </section>
   );
@@ -45,16 +65,18 @@ const MyItem = ({ box }) => {
 function App() {
   return (
     <div className="App">
-      <Sidebar>
-      <Menu iconShape="square">
-        {menu_list.map((menu_item) => (
-          <MyItem key={menu_item.id} box={menu_item} />
-        ))}
-      </Menu>
+      <div className="center-content">
+      <Sidebar className="sidebar">
+        <Menu iconShape="square">
+          {menu_list.map((menu_item) => (
+            <MyItem key={menu_item.id} box={menu_item} />
+          ))}
+        </Menu>
 
       </Sidebar>
-      
       <Outlet />
+
+      </div>
     </div>
   );
 }

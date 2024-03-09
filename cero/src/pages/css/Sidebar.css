@@ -1,0 +1,11 @@
+.center-content {
+    display: flex;
+    align-items: center;
+    height: 100vh; /* Adjust the percentage or use a fixed value for vertical adjustment */
+
+  }
+
+.sidebar {
+    background-color: rgb(255, 255, 255) !important;
+
+}

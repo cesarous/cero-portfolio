@@ -7,12 +7,12 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from './App';
-import Home from './components/Home';
-import About from './components/About';
-import Projects from './components/Projects';
-import Qualifications from './components/Qualifications';
-import Services from './components/Services';
-import Connect from './components/Connect';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Qualifications from './pages/Qualifications';
+import Services from './pages/Services';
+import Connect from './pages/Connect';
 
 library.add(fab, fas, far);
 
