@@ -4,6 +4,7 @@ import './pages/css/Sidebar.css';
 import * as Icons from '@mui/icons-material/'; // Import all icons from Material-UI
 
 import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import { Box, Image, Heading, Text } from "@chakra-ui/react";
 
 import { Outlet, Link } from 'react-router-dom';
 
@@ -51,12 +52,13 @@ const MyItem = ({ box }) => {
   const BoxIcon = Icons[iconName]; // Dynamically get the icon component
   console.log({iconName});
   console.log({Icons});
+  //set icons below 
   return (
 
     <section id="services-list">
-      <></>
       <Link to={box.link}>
-        <MenuItem background-color = "white" icon= {BoxIcon && <BoxIcon />}>{box.title}</MenuItem>
+
+        <MenuItem background-color = "white" >{box.title}</MenuItem>
       </Link>
     </section>
   );
@@ -68,6 +70,11 @@ function App() {
       <div className="center-content">
       <Sidebar className="sidebar">
         <Menu iconShape="square">
+        <Image 
+        w="auto"
+        h="auto"
+        align src="favicon.ico"></Image>
+
           {menu_list.map((menu_item) => (
             <MyItem key={menu_item.id} box={menu_item} />
           ))}
