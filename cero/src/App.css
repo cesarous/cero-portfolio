@@ -43,25 +43,9 @@ h2 {
   color: #165a72;
 } */
 
-h1 {
-  color: #49494b;
-  margin: 50px auto;
-  font-size: 40px;
-}
-.menu1 {
-  margin-bottom: 40px;
-  margin-top: 20px;
-}
-.h2 {
-  font-family: 'Forum', system-ui;
 
-  color: #49494b;
-}
 
-.test{
-    font-family: 'Forum', system-ui;
 
-}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

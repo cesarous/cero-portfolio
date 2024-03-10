@@ -4,22 +4,23 @@ import './css/ContactUs.css';
 
 export const ContactUs = () => {
   const form = useRef();
-  const [hover, setHover] = useState(false);
 
-  const handleMouseEnter = () => {
-    setHover(true);
-  };
 
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
+  const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const EMAILJS_USER_ID = process.env.REACT_APP_EMAILJS_USER_ID;
+  
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log(EMAILJS_SERVICE_ID);
+    console.log(EMAILJS_TEMPLATE_ID);
+    console.log(EMAILJS_USER_ID);
 
-    emailjs.sendForm('service_nnsr9sa', 'template_mk1dsy8', form.current, 'e_GbC-iNiX6gBn0Ar4LqG')
+    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form.current, EMAILJS_USER_ID)
       .then((result) => {
         console.log(result.text);
-      }, (error) => {
+      })
+      .catch((error) => {
         console.log(error.text);
       });
   };
@@ -47,19 +48,7 @@ export const ContactUs = () => {
         <label htmlFor="message">Message</label>
         <textarea id="message" name="message" required></textarea>
       </div>
-      <input style={{
-            marginTop: '10px',
-            maxWidth: 'sm',
-            borderWidth: '1px',
-            borderRadius: '10px',
-            overflow: 'hidden',
-            boxShadow: hover
-              ? '0 4px 8px 0 rgba(94, 23, 235, 0.2), 0 6px 20px 0 rgba(94, 23, 235, 0.19)'
-              : '',
-            transition: 'box-shadow 0.3s ease-in-out',
-          }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave} 
+      <input 
       type="submit" value="Send" />
     </form>
     </section>

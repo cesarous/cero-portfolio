@@ -1,27 +1,21 @@
 import React, { useState } from 'react';
 import { Box, Text, Image } from '@chakra-ui/react';
 import { Outlet, Link } from 'react-router-dom';
+import useHover from '../hooks/hover'; // Import the custom hook
+import './css/ServicesList.css';
 
 
 const ServiceCard = ({ service }) => {
-  const [hover, setHover] = useState(false);
+  const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
 
-  const handleMouseEnter = () => {
-    setHover(true);
-  };
-
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
 
   return (
     <section id="services-list">
-    <Box
+    <Box className="card"
       maxW="sm"
       borderWidth="1px"
-      borderRadius="lg"
       overflow="hidden"
-      boxShadow={hover ? '0 4px 8px 0 rgba(94, 23, 235, 0.2), 0 6px 20px 0 rgba(94, 23, 235, 0.19)' : '0 4px 8px 0 #49494b;'}
+      boxShadow={isHovered ? '0 4px 8px 0 rgba(94, 23, 235, 0.2), 0 6px 20px 0 rgba(94, 23, 235, 0.19)' : '0 4px 8px 0 #49494b;'}
       transition="box-shadow 0.3s ease-in-out"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

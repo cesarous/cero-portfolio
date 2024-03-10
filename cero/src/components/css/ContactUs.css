@@ -34,14 +34,22 @@
   .contact-form input[type="submit"] {
     background-color: #ffffff;
     color: #49494b;
-    
+    margin-top: 10px;
+    max-width: "sm";
+    border-width: 1px;
+    border-radius: 10px;
+    overflow: 'hidden';
+    transition: 'box-shadow 0.3s ease-in-out';
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    
   }
   
-
+  .contact-form input[type="submit"]:hover {
+    box-shadow: 0 4px 8px 0 rgba(94, 23, 235, 0.2), 0 6px 20px 0 rgba(94, 23, 235, 0.2);
+  }
+  
+/* rgba(94, 23, 235, 0.2)*/
   
   form {
     max-width: 800px; /* Set a maximum width for the form */

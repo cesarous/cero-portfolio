@@ -6,6 +6,22 @@
   }
 
 .sidebar {
-    background-color: rgb(255, 255, 255) !important;
-    margin-bottom: 5%;
+    background-color: white !important;
+    height: 100vh;
+}
+
+.custom-menu-item{
+  background-color:white !important;  
+}
+
+.menu-separator{
+  border: none;
+  height: 0.75px;
+  background-color: #9b9b9e; /* Adjust the color as needed */
+  margin: 0;
+  width: 5%; /* Adjust the percentage based on your preference */
+  margin-left: 47.5%; /* Adjust the left margin based on your preference */
+  margin-right: 47.5%; /* Adjust the right margin based on your preference */
+  margin-top: 5px;
+  margin-bottom: 7px;
 }

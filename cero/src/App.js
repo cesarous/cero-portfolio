@@ -53,12 +53,14 @@ const MyItem = ({ box }) => {
   console.log({iconName});
   console.log({Icons});
   //set icons below 
+  // icon= {BoxIcon && <BoxIcon />}
   return (
 
     <section id="services-list">
       <Link to={box.link}>
 
-        <MenuItem background-color = "white" >{box.title}</MenuItem>
+        <MenuItem  className='custom-menu-item' > {BoxIcon && <BoxIcon />}   {BoxIcon && <br />} {box.title}</MenuItem>
+        <hr className="menu-separator" />
       </Link>
     </section>
   );
@@ -69,7 +71,10 @@ function App() {
     <div className="App">
       <div className="center-content">
       <Sidebar className="sidebar">
-      <Image marginBottom="40px"
+        <div height= "100vh"></div>
+      <Image 
+        marginTop="25%"
+        marginBottom="40px"
         w="auto"
         h="auto"
         align src="favicon.ico"></Image>
@@ -77,7 +82,7 @@ function App() {
        
 
           {menu_list.map((menu_item) => (
-            <MyItem marginBottom ="10px" key={menu_item.id} box={menu_item} />
+            <MyItem  marginBottom ="10px" key={menu_item.id} box={menu_item} />
           ))}
         </Menu>
 

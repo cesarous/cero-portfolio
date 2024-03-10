@@ -1,9 +1,13 @@
+import React, { useRef, useState } from 'react';
 import { Box, Image, Heading, Text } from "@chakra-ui/react";
 import { Button } from '@chakra-ui/react'
 import { useNavigate  } from 'react-router-dom';
+import useHover from '../hooks/hover'; // Import the custom hook
+import './css/Home.css'; // Import the CSS file
 
 const Home = () => {
   const navigate = useNavigate ();
+  const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
 
   const handleResumeClick = () => {
     // Define the path to your PDF file
@@ -28,7 +32,11 @@ const Home = () => {
           <Text mt={2} marginBottom = "20px">
             freelance software engineer  
           </Text>
-          <div> <Button onClick={handleResumeClick} > Resume </Button>            <Button onClick={handleHireClick} > Hire Me </Button></div>
+          <div> 
+          <Button className="button-with-hover" onClick={handleResumeClick} > Resume </Button>            
+          <Button className="button-with-hover" onClick={handleHireClick}>
+            Hire Me </Button>
+          </div>
           
       </Box>
       <Box maxWidth="md" mx="auto" marginLeft="50px" >
