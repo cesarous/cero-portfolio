@@ -26,12 +26,12 @@ const Home = () => {
     <Box maxWidth="xxl" mx="auto" marginBottom="40px" display='flex' alignItems='center'  >
   
       <Box maxWidth="lg" mx="auto">
-        <Heading className= "h2" as="h2" size="lg" mt={4}>
+        <h1 className='home-h1'>
             Cesar Rodriguez
-          </Heading>
-          <Text mt={2} marginBottom = "20px">
-            freelance software engineer  
-          </Text>
+          </h1>
+          <body className='home-body'>
+            software engineer  
+          </body>
           <div> 
           <Button className="button-with-hover" onClick={handleResumeClick} > Resume </Button>            
           <Button className="button-with-hover" onClick={handleHireClick}>

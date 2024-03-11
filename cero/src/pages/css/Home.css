@@ -1,17 +1,33 @@
-h1 {
+@import '@fontsource/gentium-book-plus';
+@import '@fontsource-variable/red-hat-mono';
+@import '@fontsource/goudy-bookletter-1911';
+
+.home-h1 {
     color: #49494b;
-    margin: 50px auto;
     font-size: 40px;
+    /*font-family: 'Red Hat Mono Variable', monospace;*/
+    font-family: 'Gentium Book Plus', serif;
+    /*font-family: 'Goudy Bookletter 1911', serif;*/
+    
+
   }
+
+
+.home-body {
+  color: #49494b;
+  font-size: 24px;
+  font-family: 'Red Hat Mono Variable', monospace;
+  /*font-family: 'Gentium Book Plus', serif;*/
+  /*font-family: 'Goudy Bookletter 1911', serif;*/
+  margin-bottom: 20px;
+
+}
+
 .menu1 {
 margin-bottom: 40px;
 margin-top: 20px;
 }
-.h2 {
-font-family: 'Forum', system-ui;
 
-color: #49494b;
-}
 
 .button-with-hover {
     margin-left: 2%;

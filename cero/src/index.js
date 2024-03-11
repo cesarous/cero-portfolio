@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -13,6 +13,7 @@ import Projects from './pages/Projects';
 import Qualifications from './pages/Qualifications';
 import Services from './pages/Services';
 import Connect from './pages/Connect';
+
 
 library.add(fab, fas, far);
 

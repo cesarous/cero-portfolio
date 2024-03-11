@@ -24,12 +24,12 @@ const ServiceCard = ({ service }) => {
         <Link to={service.link}>
           {service.image && <Image src={service.image} alt={service.title} />}
           <Box p="6">
-            <Text fontWeight="bold" fontSize="xl" mb="2">
+            <h1 className= "project-body-header" fontWeight="bold" fontSize="xl" mb="2">
               {service.title}
-            </Text>
-            <Text fontSize="md" color="gray.600">
+            </h1>
+            <body className= "project-body">
               {service.description}
-            </Text>
+            </body>
           </Box>
         </Link>
       ) : (
@@ -37,12 +37,12 @@ const ServiceCard = ({ service }) => {
         <>
           {service.image && <Image src={service.image} alt={service.title} />}
           <Box p="6">
-            <Text fontWeight="bold" fontSize="xl" mb="2">
+            <h1 className= "project-body-header" fontWeight="bold" fontSize="xl" mb="2">
               {service.title}
-            </Text>
-            <Text fontSize="md" color="gray.600">
+            </h1>
+            <body className= "project-body">
               {service.description}
-            </Text>
+            </body>
           </Box>
         </>
       )}
