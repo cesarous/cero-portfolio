@@ -70,23 +70,23 @@ function App() {
   return (
     <div className="App">
       <div className="center-content">
-      <Sidebar className="sidebar">
-        <div height= "100vh"></div>
-      <Image 
-        marginTop="25%"
-        marginBottom="40px"
-        w="auto"
-        h="auto"
-        align src="favicon.ico"></Image>
-        <Menu iconShape="square">
-       
+        <Sidebar className="sidebar">
+          <div height= "100vh"></div>
+        <Image 
+          marginTop="25%"
+          marginBottom="40px"
+          w="auto"
+          h="auto"
+          align src="favicon.ico"></Image>
+          <Menu iconShape="square">
+        
 
-          {menu_list.map((menu_item) => (
-            <MyItem  marginBottom ="10px" key={menu_item.id} box={menu_item} />
-          ))}
-        </Menu>
+            {menu_list.map((menu_item) => (
+              <MyItem  marginBottom ="10px" key={menu_item.id} box={menu_item} />
+            ))}
+          </Menu>
 
-      </Sidebar>
+        </Sidebar>
       <Outlet />
 
       </div>

@@ -28,7 +28,18 @@ margin-bottom: 40px;
 margin-top: 20px;
 }
 
+.home_box{
+  align-items:start;
+}
 
+.image_class{
+  align-items:start;
+  margin-top: -29.7% !important;    
+  clip-path: polygon(20% 0%,  
+                  80% 0%, 80% 30%, 75% 75%, 50% 90%, 25% 75%, 20% 30%);
+  width:90vw !important;
+  height:auto;
+  }
 .button-with-hover {
     margin-left: 2%;
     margin-right: 2%;
