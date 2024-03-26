@@ -5,10 +5,9 @@ import './css/ContactUs.css';
 export const ContactUs = () => {
   const form = useRef();
 
-
-  const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-  const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-  const EMAILJS_USER_ID = process.env.REACT_APP_EMAILJS_USER_ID;
+  const EMAILJS_SERVICE_ID = 'service_cero';
+  const EMAILJS_TEMPLATE_ID = 'template_zxczxc9';
+  const EMAILJS_USER_ID = 'llNM_qDTX-jUPDiIL';
   
   const sendEmail = (e) => {
     e.preventDefault();
