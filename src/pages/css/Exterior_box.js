@@ -4,4 +4,6 @@ export const boxStyles = {
     maxHeight: '100%', // Limits the height to 70% of the viewport height
     width: '90%', // Ensures the box takes full width
   };
+
+  
   

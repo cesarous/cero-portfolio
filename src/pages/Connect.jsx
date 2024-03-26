@@ -3,6 +3,7 @@ import { Button } from '@chakra-ui/react'
 import ServicesList from '../components/ServicesList.jsx';
 import ContactUs from '../components/ContactUs.jsx';
 import { Flex } from '@chakra-ui/react';
+import { Height } from "@mui/icons-material";
 
 
 const Services = [
@@ -31,9 +32,12 @@ const Services = [
 ];
 const Connect = () => {
   return (
-    <Box margin = "auto">
-      <ServicesList services={Services}/>
-      <ContactUs></ContactUs>
+    <Box margin = "auto" sx={{height:"100vh" , display:"flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+      <hr id="connect" style={{visibility:"hidden"}} ></hr>
+      <Box sx={{}}>  
+          <ServicesList services={Services}/>
+          <ContactUs></ContactUs>
+      </Box>
       </Box>
   );
 };

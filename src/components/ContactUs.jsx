@@ -19,8 +19,10 @@ export const ContactUs = () => {
     emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form.current, EMAILJS_USER_ID)
       .then((result) => {
         console.log(result.text);
+        alert("Your mail has been sent! I'll talk to you soon!");
       })
       .catch((error) => {
+        alert("I'm so sorry! The mailing service must be down - please shoot me an email to let me know!");
         console.log(error.text);
       });
   };

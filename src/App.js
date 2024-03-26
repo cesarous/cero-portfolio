@@ -8,6 +8,7 @@ import { Box, Image, Heading, Text } from "@chakra-ui/react";
 
 import { Outlet, Link } from 'react-router-dom';
 
+/*
 const menu_list = [
   {
     id: 1,
@@ -27,6 +28,18 @@ const menu_list = [
     link: '/projects',
     icon: 'Engineering'
   },
+
+  {
+    id: 6,
+    title: 'Connect',
+    link: '/connect',
+    icon: 'Phone'
+  },
+];
+
+*/
+
+/*
   {
     id: 4,
     title: 'History',
@@ -39,13 +52,41 @@ const menu_list = [
     link: '/services',
     icon: 'Terminal'
   },
+
+*/ 
+
+
+
+const menu_list = [
+  {
+    id: 1,
+    title: 'Home',
+    link: '#start',
+    icon: 'Home'
+  },
+  {
+    id: 2,
+    title: 'About',
+    link: '#about',
+    icon: 'FitnessCenter'
+  },
+  {
+    id: 3,
+    title: 'Projects',
+    link: '#projects',
+    icon: 'Engineering'
+  },
+
   {
     id: 6,
     title: 'Connect',
-    link: '/connect',
+    link: '#connect',
     icon: 'Phone'
   },
 ];
+
+
+
 
 const MyItem = ({ box }) => {
   const iconName = box.icon;
@@ -54,16 +95,27 @@ const MyItem = ({ box }) => {
   console.log({Icons});
   //set icons below 
   // icon= {BoxIcon && <BoxIcon />}
-  return (
+ /* return (
 
     <section id="services-list">
-      <Link to={box.link}>
+      <Link to= {box.link} >
 
         <MenuItem  className='custom-menu-item' > {BoxIcon && <BoxIcon />}   {BoxIcon && <br />} {box.title}</MenuItem>
         <hr className="menu-separator" />
       </Link>
     </section>
+  );*/ 
+  return (
+
+    <section id="services-list">
+      <a href={box.link}>
+
+        <MenuItem  className='custom-menu-item' > {BoxIcon && <BoxIcon />}   {BoxIcon && <br />} {box.title}</MenuItem>
+        <hr className="menu-separator" />
+      </a>
+    </section>
   );
+  
 };
 
 function App() {
@@ -73,7 +125,7 @@ function App() {
         <Sidebar className="sidebar">
           <div height= "100vh"></div>
         <Image 
-          marginTop="25%"
+          marginTop="75%"
           marginBottom="40px"
           w="auto"
           h="auto"

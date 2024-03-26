@@ -4,6 +4,11 @@ import { Button } from '@chakra-ui/react'
 import { useNavigate  } from 'react-router-dom';
 import useHover from '../hooks/hover'; // Import the custom hook
 import './css/Home.css'; // Import the CSS file
+import About from './About';
+import Projects from './Projects';
+import Connect from './Connect.jsx';
+
+import { boxStyles } from './css/Exterior_box.js';
 
 const Home = () => {
   const navigate = useNavigate ();
@@ -17,53 +22,75 @@ const Home = () => {
   };
   
   const handleHireClick = () => {
-    navigate('/connect');
+    //navigate('/connect');
   };
 
   return (
-    <div>
-    <Box className='home_box' mx="auto">
-      <Image  className='image_class'   
-                boxSize='300px'
-                src="babel_COPY.JPG" 
-                alt="library"
-                h="auto"
-                marginTop="0px"
-                objectFit="cover"
-              />
+    <>
 
-      <Box  marginTop = "10vw" width = "40vw" maxWidth="xxl" mx="auto" marginBottom="40px" display='flex' alignItems='center'  >
-      
-        <Box maxWidth="lg" mx="auto">
-        
-          <h1 className='home-h1'>
-              Cesar Rodriguez
-            </h1>
-            <body className='home-body'>
-              software engineer  
-            </body>
-            <div> 
-            <Button className="button-with-hover" onClick={handleResumeClick} > Resume </Button>            
-            <Button className="button-with-hover" onClick={handleHireClick}>
-              Hire Me </Button>
-            </div>
+    <Box className='home_box' mx="auto" sx={boxStyles}>
+      <Box sx={{ height: "100vh", display: "flex", flexDirection: "column" }}>
+        <Box style={{ flex: "1" }}>
+          <Image  className='image_class'
+                    id="start"    
+                    boxSize='300px'
+                    src="babel_COPY.JPG" 
+                    alt="library"
+                    h="auto"
+                    marginTop="0% !important"
+                    objectFit="cover"
+                  />
+          </Box>
+          <Box  width = "40%" maxWidth="xxl" mx="auto" display='flex' alignItems='center' style={{ flex: "1" }} >
+          
+            <Box maxWidth="lg" mx="auto">
             
-        </Box>
-        <Box maxWidth="md" mx="auto" marginLeft="50px" >
-          <Image
-                borderRadius='full'
-                boxSize='100px'
-                src="Headshot.JPG" 
-                alt="The Face of the Company"
-                w="50%"
-                h="auto"
-                objectFit="cover"
-              />
-        </Box>
+              <h1 className='home-h1'>
+                  Cesar Rodriguez
+                </h1>
+                <body className='home-body'>
+                  software engineer  
+                </body>
+                <div> 
+                <Button className="button-with-hover" onClick={handleResumeClick} > Resume </Button>            
+                <a href="#connect"> <Button className="button-with-hover" onClick={handleHireClick}> 
+                  Hire Me </Button></a>
+                </div>
+                
+            </Box>
+            
+            <Box maxWidth="md" mx="auto" marginLeft="5%" >
+              <Image
+                    borderRadius='full'
+                    boxSize='100px'
+                    src="Headshot.JPG" 
+                    alt="The Face of the Company"
+                    w="50%"
+                    h="auto"
+                    objectFit="cover"
+                  />
+            </Box>
 
+          </Box>
+          <Box >
+            <Image  className='image_class_bot'
+                    boxSize='20%'
+                    src="babel_bottom.JPG" 
+                    alt="library"
+                    h="auto"
+                    marginBottom="0% !important"
+                    objectFit="cover"
+                  />
+          </Box>
       </Box>
+
+
+      <About ></About>
+      <Projects> </Projects>
+      <Connect ></Connect>
     </Box>
-    </div>
+    </>
+    
   );
 };
 

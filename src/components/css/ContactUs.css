@@ -46,7 +46,7 @@
   }
   
   .contact-form input[type="submit"]:hover {
-    box-shadow: 0 4px 8px 0 rgba(94, 23, 235, 0.2), 0 6px 20px 0 rgba(94, 23, 235, 0.2);
+    box-shadow: 0 4px 8px 0  rgba(11, 43, 11, 0.2), 0 6px 20px 0 rgb(34, 139, 34, .2);
   }
   
 /* rgba(94, 23, 235, 0.2)*/

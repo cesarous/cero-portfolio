@@ -61,9 +61,9 @@ const fun_projects= [
     id: 1,    
     title: 'Poetics of Decryption',
     image: 'read_image.png', 
-    description:  "Decrypted the message in Poetics of Encryption exhibition" + 
-    " through remapping in polar cordinants (using open CV) revealing the message \"A lie told often enough becomes the truth\" " +
-    "after reading hex (numbers and letters in exterior black circle) in OCR and translating - more trouble than just typing."
+    description:  "Decrypted the message in an exhibition titled \"Poetics of Encryption\"" + 
+    " by remapping in polar cordinants (using openCV) revealing the message \"A lie told often enough becomes the truth.\" " +
+    "after reading the hex in the exterior black circle with OCR software and translating - more trouble than just typing."
   },
   
 
@@ -73,7 +73,7 @@ const fun_projects= [
 const Projects = () => {
   return (
     <Box maxWidth="xxl" mx="auto"  display='inLine' alignItems='center' sx={boxStyles}>
-      <h1 className = "project-title"> 
+      <h1 id = "projects" className = "project-title"> 
           Freelance Work
       </h1>
         <hr className="header-separator" />
