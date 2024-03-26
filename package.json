@@ -31,6 +31,7 @@
     "@testing-library/user-event": "^13.5.0",
     "dotenv": "^16.4.5",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
@@ -40,8 +41,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
