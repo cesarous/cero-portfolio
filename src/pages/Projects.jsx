@@ -50,7 +50,7 @@ const school_projects= [
   {
     id: 3,
     title: 'Autonomous Drone Design',
-    image: 'drone.jpg',
+    image: 'drone.JPG',
     description: 'Designed an autonomous drone that navigates a maze using LIDAR sensors  '
   }
 
