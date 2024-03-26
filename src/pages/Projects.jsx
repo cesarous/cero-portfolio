@@ -9,7 +9,7 @@ const paid_projects = [
     id: 1,
     title: 'Isreal Carpet Cleaning Co.',
     image: 'ICCS_logo.png', 
-    link: 'https://www.isrealcarpetcleaning.com/',
+    link: 'https://cesarous.github.io/ICCS/',
     description: 'Created website for local carpet cleaning buissness.'
   },
   {
