@@ -2,6 +2,7 @@ import { Box, Image, Heading, Text } from "@chakra-ui/react";
 import { Button } from '@chakra-ui/react'
 import ServicesList from '../components/ServicesList.jsx';
 import "./css/Projects.css";
+import { boxStyles } from './css/Exterior_box.js';
 
 const paid_projects = [
   {
@@ -55,10 +56,23 @@ const school_projects= [
 
 ];
 
+const fun_projects= [
+  {
+    id: 1,    
+    title: 'Poetics of Decryption',
+    image: 'read_image.png', 
+    description:  "Decrypted the message in Poetics of Encryption exhibition" + 
+    " through remapping in polar cordinants (using open CV) revealing the message \"A lie told often enough becomes the truth\" " +
+    "after reading hex (numbers and letters in exterior black circle) in OCR and translating - more trouble than just typing."
+  },
+  
+
+];
+
 
 const Projects = () => {
   return (
-    <Box maxWidth="xxl" mx="auto" marginBottom="10%" marginTop="30%" display='inLine' alignItems='center'>
+    <Box maxWidth="xxl" mx="auto"  display='inLine' alignItems='center' sx={boxStyles}>
       <h1 className = "project-title"> 
           Freelance Work
       </h1>
@@ -75,6 +89,16 @@ const Projects = () => {
 
       <Box>      
         <ServicesList className = "project-body" services={school_projects}/>
+
+      </Box>
+
+      <h1 className = "project-title"> 
+        For fun 
+      </h1 >
+      <hr className="header-separator" />
+
+      <Box>      
+        <ServicesList className = "project-body" style={{maxWidth:"100%"}} services={fun_projects}/>
 
       </Box>
     </Box>

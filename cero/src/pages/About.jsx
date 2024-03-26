@@ -1,7 +1,7 @@
 import { Box, Image, Heading, Text } from "@chakra-ui/react";
 import { Button } from '@chakra-ui/react'
 import ServicesList from '../components/ServicesList.jsx';
-
+import { boxStyles } from './css/Exterior_box.js';
 
 const school_projects= [
   {
@@ -18,7 +18,7 @@ const school_projects= [
 
 const About = () => {
       return(
-        <Box maxWidth="xxl" mx="auto"  display='inLine' alignItems='center'>
+        <Box maxWidth="xxl" mx="auto"  display='inLine' alignItems='center' sx={boxStyles}>
           <h1 className = "project-title"> 
               About Me 
           </h1>
