@@ -44,7 +44,7 @@ const school_projects= [
     title: 'Cardiopulmonary Resuscitation Response Timer',
     image: 'UROP.png', 
     description:  "Design and implement an application to ease the " +
-                  "burden on data collection required for Cardiovascular Arrests" 
+                  "burden on data collection required for cardiovascular arrests" 
                   +"and other medical emergencies, for use by residents and fellows at the University of Michigan Medical School."
   },
   {

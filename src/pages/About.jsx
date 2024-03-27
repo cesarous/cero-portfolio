@@ -17,14 +17,26 @@ const About = () => {
             
               </Image>
               <body className = "project-body-header" style = {{textAlign:'left'}}> 
-                  Work history:   
+                  Education:   
               </body>
               <div style = {{textAlign:'left', marginLeft:'3%'}}>
                 {[
                   "Computer Science Engineering grad from the University of Michigan",
+                ].map((text, index) => (
+                  <Box key={index} className="project-body-header" style={{ textAlign: "left" }}>
+                    {text}
+                  </Box>
+                ))}
+              </div>
+              <body className = "project-body-header" style = {{textAlign:'left'}}> 
+                  Work history:   
+              </body>
+              <div style = {{textAlign:'left', marginLeft:'3%'}}>
+                {[
                   "UI/UX engineering lead for a gaming startup (stay tuned)",
                   "I worked on distributed systems at MIT LL",
                   "Worked on the security engine for and helped validate the meteorlake CPU at Intel Corporation",
+                  "Have worked with data analysis at UIC and UMICH",
                   "Excellent communication skills - several speaking awards won",
                   "Fluent in Spanish"
                 ].map((text, index) => (
@@ -43,6 +55,7 @@ const About = () => {
                     "Music aficionado (who isn't?)",
                     "Youtube philosophy junkie",
                     "Big art enthusiast",
+                    "Always looking for new projects",
 
                   ].map((text, index) => (
                     <body key={index} className="project-body-header" style={{ textAlign: 'left' }}>
