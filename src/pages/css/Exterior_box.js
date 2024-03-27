@@ -5,5 +5,11 @@ export const boxStyles = {
     width: '90%', // Ensures the box takes full width
   };
 
+export const aboutboxStyles = {
+    overflowY: 'auto', // Allows content to overflow vertically
+    width: '90%', // Ensures the box takes full width
+    height:"100vh",
+};
+
   
   

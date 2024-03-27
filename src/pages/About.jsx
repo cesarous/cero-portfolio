@@ -1,12 +1,12 @@
 import { Box, Image, Heading, Text } from "@chakra-ui/react";
 import { Button } from '@chakra-ui/react'
 import ServicesList from '../components/ServicesList.jsx';
-import { boxStyles } from './css/Exterior_box.js';
+import { boxStyles, aboutboxStyles } from './css/Exterior_box.js';
 
 
 const About = () => {
       return(
-        <Box maxWidth="xxl" mx="auto"  display='inLine' alignItems='left' sx={boxStyles}>
+        <Box maxWidth="xxl" mx="auto"  display='inLine' alignItems='left' sx={aboutboxStyles}>
           <h1 id="about" className = "project-title"> 
               About Me 
           </h1>

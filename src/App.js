@@ -7,6 +7,8 @@ import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import { Box, Image, Heading, Text } from "@chakra-ui/react";
 
 import { Outlet, Link } from 'react-router-dom';
+import { isMobile, isTablet, isDesktop } from 'react-device-detect';
+
 
 /*
 const menu_list = [
@@ -119,11 +121,15 @@ const MyItem = ({ box }) => {
 };
 
 function App() {
+
   return (
     <div className="App">
       <div className="center-content">
+
+
+        {isMobile? null : (
         <Sidebar className="sidebar">
-          <div height= "100vh"></div>
+          <div height= "100vh">     </div>
         <Image 
           marginTop="75%"
           marginBottom="40px"
@@ -138,7 +144,10 @@ function App() {
             ))}
           </Menu>
 
-        </Sidebar>
+        </Sidebar>)}
+
+
+
       <Outlet />
 
       </div>
