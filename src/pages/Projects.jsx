@@ -72,7 +72,7 @@ const fun_projects= [
 
 const Projects = () => {
   return (
-    <Box maxWidth="xxl" mx="auto"  display='inLine' alignItems='center' sx={boxStyles}>
+    <Box maxWidth="xxl" mx="auto"  display='inLine' alignItems='center' marginBottom='10% !important' sx={boxStyles}>
       <h1 id = "projects" className = "project-title"> 
           Freelance Work
       </h1>
@@ -99,7 +99,6 @@ const Projects = () => {
 
       <Box>      
         <ServicesList className = "project-body" style={{maxWidth:"100%"}} services={fun_projects}/>
-
       </Box>
     </Box>
   );

@@ -6,7 +6,7 @@ import { boxStyles, aboutboxStyles } from './css/Exterior_box.js';
 
 const About = () => {
       return(
-        <Box maxWidth="xxl" mx="auto"  display='inLine' alignItems='left' sx={aboutboxStyles}>
+        <Box maxWidth="xxl" mx="auto" display='inLine' alignItems='left' sx={aboutboxStyles}>
           <h1 id="about" className = "project-title"> 
               About Me 
           </h1>

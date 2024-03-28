@@ -4,7 +4,7 @@ import ServicesList from '../components/ServicesList.jsx';
 import ContactUs from '../components/ContactUs.jsx';
 import { Flex } from '@chakra-ui/react';
 import { Height } from "@mui/icons-material";
-
+import { Spacer } from "@chakra-ui/react";
 
 const Services = [
   {
@@ -32,13 +32,17 @@ const Services = [
 ];
 const Connect = () => {
   return (
+    <>
+    <Spacer></Spacer>
     <Box margin = "auto" sx={{height:"100vh" , display:"flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+      
       <hr id="connect" style={{visibility:"hidden"}} ></hr>
       <Box sx={{}}>  
           <ServicesList services={Services}/>
           <ContactUs></ContactUs>
       </Box>
       </Box>
+    </>
   );
 };
 

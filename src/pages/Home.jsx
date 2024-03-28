@@ -7,7 +7,7 @@ import './css/Home.css'; // Import the CSS file
 import About from './About';
 import Projects from './Projects';
 import Connect from './Connect.jsx';
-
+import { Spacer } from '@chakra-ui/react'; 
 import { boxStyles } from './css/Exterior_box.js';
 
 const Home = () => {
@@ -29,7 +29,7 @@ const Home = () => {
     <>
 
     <Box className='home_box' mx="auto" sx={boxStyles}>
-      <Box sx={{ height: "100vh", display: "flex", flexDirection: "column" }}>
+      <Box  marginBottom='5% !important' sx={{ height: "100vh", display: "flex", flexDirection: "column" }}>
         <Box style={{ flex: "1" }}>
           <Image  className='image_class'
                     id="start"    
@@ -84,9 +84,11 @@ const Home = () => {
           </Box>
       </Box>
 
-
-      <About ></About>
+      <Spacer></Spacer>
+      <About  marginBottom='7% !important' ></About>
+      <Spacer></Spacer>
       <Projects> </Projects>
+      <Spacer></Spacer>
       <Connect ></Connect>
     </Box>
     </>
