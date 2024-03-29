@@ -88,7 +88,7 @@ const Home = () => {
       <About  marginBottom='7% !important' ></About>
       <Spacer></Spacer>
       <Projects> </Projects>
-      <Spacer></Spacer>
+      <Spacer sx={{marginTop:"5%", height:"0.5vh"}}></Spacer>
       <Connect ></Connect>
     </Box>
     </>
