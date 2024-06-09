@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.afe12618.css",
-    "main.js": "/static/js/main.a3badf9e.js",
+    "main.js": "/static/js/main.0564407d.js",
     "static/media/gentium-book-plus-latin-ext-400-normal.woff2": "/static/media/gentium-book-plus-latin-ext-400-normal.b4e39b9f6d112a86df6c.woff2",
     "static/media/gentium-book-plus-latin-ext-400-normal.woff": "/static/media/gentium-book-plus-latin-ext-400-normal.7d0b575c91bd978ce47b.woff",
     "static/media/source-code-pro-latin-ext-wght-normal.woff2": "/static/media/source-code-pro-latin-ext-wght-normal.926d47d8a23288f10476.woff2",
@@ -29,10 +29,10 @@
     "static/media/source-code-pro-greek-ext-wght-normal.woff2": "/static/media/source-code-pro-greek-ext-wght-normal.12f4f25e9c89ce51ed51.woff2",
     "index.html": "/index.html",
     "main.afe12618.css.map": "/static/css/main.afe12618.css.map",
-    "main.a3badf9e.js.map": "/static/js/main.a3badf9e.js.map"
+    "main.0564407d.js.map": "/static/js/main.0564407d.js.map"
   },
   "entrypoints": [
     "static/css/main.afe12618.css",
-    "static/js/main.a3badf9e.js"
+    "static/js/main.0564407d.js"
   ]
 }
