@@ -33,7 +33,7 @@ const About = () => {
               </body>
               <div style = {{textAlign:'left', marginLeft:'3%'}}>
                 {[
-                  "UI/UX engineering lead for a gaming startup (stay tuned)",
+                  "Engineering lead for NextArena (stay tuned)",
                   "I worked on distributed systems at MIT LL",
                   "Worked on the security engine for and helped validate the meteorlake CPU at Intel Corporation",
                   "Have worked with data analysis at UIC and UMICH",
