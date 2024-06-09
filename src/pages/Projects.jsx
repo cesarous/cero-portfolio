@@ -104,7 +104,7 @@ const Projects = () => {
       </Box>
 
       <h1 className = "project-title"> 
-        For fun 
+        For Fun 
       </h1 >
       <hr className="header-separator" />
 
