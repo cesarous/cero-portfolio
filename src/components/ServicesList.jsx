@@ -16,7 +16,14 @@ const ServiceCard = ({ service }) => {
     >
       {service.link ? (
         <a href={service.link}>
-          {service.image && <Image src={service.image} alt={service.title} />}
+          {service.image &&
+                    <Image
+                    src={service.image}
+                    alt={service.title}
+                    width="100%"
+                    transition="transform width 0.3s ease-in-out" // Add transition for transform and width
+                  />
+}
           <Box p="6">
             <Text className="project-body-header" fontWeight="bold" fontSize="xl" mb="2">
               {service.title}

@@ -4,7 +4,18 @@ import ServicesList from '../components/ServicesList.jsx';
 import "./css/Projects.css";
 import { boxStyles } from './css/Exterior_box.js';
 
+
+const next_arena= [
+
+]
 const paid_projects = [
+  {
+    id: 0,
+    title: 'NextArena',
+    image: 'nextarena.jpg', 
+    link: 'https://nextarena.gg',
+    description: 'Play games. Make money. \n Engage in esports tournaments for prizes.'
+  },
   {
     id: 1,
     title: 'Isreal Carpet Cleaning Co.',
